@@ -1,0 +1,33 @@
+{
+    "name": "file-organizer",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node file-organizer.js",
+        "dev": "nodemon file-organizer.js",
+        "scan": "node file-organizer.js scan",
+        "duplicates": "node file-organizer.js duplicates",
+        "organize": "node file-organizer.js organize",
+        "cleanup": "node file-organizer.js cleanup"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/yulikafsd/file-organizer.git"
+    },
+    "keywords": [],
+    "author": "Yuliia Zahorovska <ju.zagorovsky@gmail.com>",
+    "license": "ISC",
+    "type": "module",
+    "bugs": {
+        "url": "https://github.com/yulikafsd/file-organizer/issues"
+    },
+    "homepage": "https://github.com/yulikafsd/file-organizer#readme",
+    "devDependencies": {
+        "nodemon": "^3.1.14"
+    },
+    "dependencies": {
+        "commander": "^15.1.0"
+    }
+}
