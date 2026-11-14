@@ -314,30 +314,3 @@ program
     });
 
 program.parse();
-
-async function main() {
-    switch (command) {
-        case "scan":
-            await runScan(resolvedDir);
-            break;
-
-        case "duplicates":
-            await runDuplicates(resolvedDir);
-            break;
-
-        case "organize":
-            break;
-
-        case "cleanup":
-            break;
-
-        default:
-            console.error(`❌ Error: Unknown command "${command}"`);
-            console.log(
-                "Available commands: scan, duplicates, organize, cleanup",
-            );
-            process.exit(1);
-    }
-}
-
-main();
