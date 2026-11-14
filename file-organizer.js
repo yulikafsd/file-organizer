@@ -22,22 +22,6 @@ function drawProgressBar(current, total, width = 20) {
     return `${bar} ${current}/${total}`;
 }
 
-const args = process.argv.slice(2);
-const command = args[0];
-const targetDir = args[1];
-
-if (!command || !targetDir) {
-    console.error(
-        "❌ Error: Please provide both a command and a target directory.",
-    );
-    console.log(
-        "Usage: node file-organizer.js <scan|duplicates|organize|cleanup> <directory>",
-    );
-    process.exit(1);
-}
-
-const resolvedDir = path.resolve(targetDir);
-
 async function runScan(directory) {
     const scanner = new Scanner();
 
